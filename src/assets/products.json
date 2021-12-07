@@ -5,7 +5,8 @@
     "description": "The old reliable.",
     "price": 2.99,
     "image": "banans.jpg",
-    "unit": "lb."
+    "unit": "lb.",
+    "quantity": 12
   },
   {
     "id": 2,
@@ -14,7 +15,8 @@
     "price": 6.75,
     "image": "bluebs.jpg",
     "unit": "lb.",
-    "featured": true
+    "featured": true,
+    "quantity": 12
   },
   {
     "id": 3,
@@ -22,7 +24,8 @@
     "description": "An all-star flavor.",
     "price": 7.24,
     "image": "carambola.jpg",
-    "unit": "lb."
+    "unit": "lb.",
+    "quantity": 1
   },
   {
     "id": 4,
@@ -30,15 +33,17 @@
     "description": "Deeply red and passionate.",
     "price": 6.99,
     "image": "cherries.jpg",
-    "unit": "lb."
+    "unit": "lb.",
+    "quantity": 13
   },
   {
     "id": 5,
     "title": "Cocktail Mix",
     "description": "Virgin mix for adult use.",
-    "price": 15.00,
+    "price": 15,
     "image": "mixeddrink.jpg",
-    "unit": "gallon"
+    "unit": "gallon",
+    "quantity": 5
   },
   {
     "id": 6,
@@ -47,7 +52,8 @@
     "price": 8.43,
     "image": "dragonfruit.jpg",
     "unit": "ea.",
-    "featured": true
+    "featured": true,
+    "quantity": 18
   },
   {
     "id": 7,
@@ -55,7 +61,8 @@
     "description": "Smells worse than it looks.",
     "price": 14.99,
     "image": "durian.jpg",
-    "unit": "ea."
+    "unit": "ea.",
+    "quantity": 4
   },
   {
     "id": 8,
@@ -63,7 +70,8 @@
     "description": "Use either for raisin or wine.",
     "price": 7.24,
     "image": "grapes.jpg",
-    "unit": "lb."
+    "unit": "lb.",
+    "quantity": 19
   },
   {
     "id": 9,
@@ -71,7 +79,8 @@
     "description": "Beans, beans... great for your heart.",
     "price": 1.79,
     "image": "beans.jpg",
-    "unit": "lb."
+    "unit": "lb.",
+    "quantity": 10
   },
   {
     "id": 10,
@@ -80,7 +89,8 @@
     "price": 7.99,
     "image": "mangocados.jpg",
     "unit": "ea.",
-    "featured": true
+    "featured": true,
+    "quantity": 17
   },
   {
     "id": 11,
@@ -88,7 +98,8 @@
     "description": "One lonely pear, eat while sobbing.",
     "price": 4.99,
     "image": "pear.jpg",
-    "unit": ""
+    "unit": "",
+    "quantity": 0
   },
   {
     "id": 12,
@@ -96,7 +107,8 @@
     "description": "Lose the sleeves, you're in Florida.",
     "price": 4.99,
     "image": "oranges.jpg",
-    "unit": "lb."
+    "unit": "lb.",
+    "quantity": 3
   },
   {
     "id": 13,
@@ -104,7 +116,8 @@
     "description": "This one's on us, Mother Nature.",
     "price": 6.39,
     "image": "peacherines.jpg",
-    "unit": "lb."
+    "unit": "lb.",
+    "quantity": 18
   },
   {
     "id": 14,
@@ -113,7 +126,8 @@
     "price": 4.29,
     "image": "peaches.jpg",
     "unit": "lb.",
-    "featured": true
+    "featured": true,
+    "quantity": 2
   },
   {
     "id": 15,
@@ -121,7 +135,8 @@
     "description": "More than one pear, pears.",
     "price": 9.22,
     "image": "pears.jpg",
-    "unit": "lb."
+    "unit": "lb.",
+    "quantity": 7
   },
   {
     "id": 16,
@@ -129,6 +144,7 @@
     "description": "Next stop, Yumsville.",
     "price": 5.99,
     "image": "rasps.jpg",
-    "unit": "lb."
+    "unit": "lb.",
+    "quantity": 11
   }
 ]
