@@ -3,6 +3,7 @@ import { MediaChange, MediaObserver } from '@angular/flex-layout';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ProductService, CartService } from 'src/app/services';
 import { Product } from 'src/app/models';
+import * as FullStory from '@fullstory/browser';
 
 /**
  * Breakpoint aliases (e.g. 'sm') to number of grid-list columns.
@@ -51,7 +52,23 @@ export class ProductsComponent implements OnInit {
   addToCart(product: Product) {
     const { id } = product;
     this.cartService.addItem(id);
-    this.snackbar.open(`Added ${product.title} to your cart`, '', { duration: 2000 });
+    if(product.id == 7) {
+      this.snackbar.open(`WHY did you add ${product.title} to your cart!?`, '', { duration: 4000 });
+      const startOfPlayback = FullStory.getCurrentSessionURL();
+      const playbackAtThisMomentInTime = FullStory.getCurrentSessionURL(true);
+      FullStory.event('Subscribed', {
+        uid_str: '750948353',
+        plan_name_str: 'Professional',
+        plan_price_real: 299,
+        plan_users_int: 10,
+        days_in_trial_int: 42,
+        feature_packs: ['MAPS', 'DEV', 'DATA'],
+      });
+      FullStory.log('Something worked!')
+      
+    } else {
+      this.snackbar.open(`Added ${product.title} to your cart`, '', { duration: 2000 });
+    }
   }
 
   /**

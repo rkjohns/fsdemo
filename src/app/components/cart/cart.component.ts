@@ -21,10 +21,6 @@ export class CartComponent implements OnInit {
   ngOnInit() {
     this.initDataSource();
     this.initCalculator();
-
-    window.addEventListener('fullstory/rageclick', function(x) {
-      //dosomething
-    })
   }
 
   /**

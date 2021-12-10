@@ -17,5 +17,7 @@ export class AppComponent {
     if (orgId) {
       FullStory.init({ orgId, debug: false });
     }
+    // FullStory.init({ orgId: '<your org id here>',
+    //   devMode: !environment.production });
   }
 }
