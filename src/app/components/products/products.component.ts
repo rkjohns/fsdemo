@@ -57,7 +57,7 @@ export class ProductsComponent implements OnInit {
       const startOfPlayback = FullStory.getCurrentSessionURL();
       const playbackAtThisMomentInTime = FullStory.getCurrentSessionURL(true);
       FullStory.event('Durian Added', {
-        plan_name_str: 'Sicko that wants durian'
+        notes: 'Sicko that wants durian'
       });
       FullStory.log('Durian Put in a cart?! Must be a mistake')
       

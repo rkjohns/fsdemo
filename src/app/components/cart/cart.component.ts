@@ -3,6 +3,7 @@ import { CartService } from 'src/app/services';
 import { Product } from 'src/app/models';
 import { Observable } from 'rxjs';
 import * as FullStory from '@fullstory/browser';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-cart',
@@ -15,7 +16,10 @@ export class CartComponent implements OnInit {
   displayedColumns: string[] = ['removeAction', 'name', 'quantity', 'cost'];
   totalCost: number = 0;
 
-  constructor(private cartService: CartService) {
+  constructor(
+    private snackbar: MatSnackBar,
+    private cartService: CartService
+    ) {
   }
 
   ngOnInit() {
@@ -46,7 +50,12 @@ export class CartComponent implements OnInit {
    */
   removeItem(item: Product): void {
     const { id } = item;
-    this.cartService.removeItem(id);
+    if(id == 7){
+      this.snackbar.open(`Good call, them is nasty.`, '', { duration: 4000 });
+      this.cartService.removeItem(id);
+    } else {
+      this.cartService.removeItem(id);
+    }
   }
 
 }
