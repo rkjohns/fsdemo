@@ -28,6 +28,7 @@ import { AppComponent } from './app.component';
 import { CartComponent, CartButtonComponent, CheckoutComponent, ProductsComponent, ThankYouComponent } from './components';
 import { CartService, ProductService } from './services';
 import { LoginComponent } from './components/login/login.component';
+import { DoubleClickDirective } from './double-click.directive';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { LoginComponent } from './components/login/login.component';
     ProductsComponent,
     ThankYouComponent,
     LoginComponent,
+    DoubleClickDirective
   ],
   imports: [
     BrowserModule,
