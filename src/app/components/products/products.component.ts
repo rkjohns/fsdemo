@@ -56,15 +56,10 @@ export class ProductsComponent implements OnInit {
       this.snackbar.open(`WHY did you add ${product.title} to your cart!?`, '', { duration: 4000 });
       const startOfPlayback = FullStory.getCurrentSessionURL();
       const playbackAtThisMomentInTime = FullStory.getCurrentSessionURL(true);
-      FullStory.event('Subscribed', {
-        uid_str: '750948353',
-        plan_name_str: 'Professional',
-        plan_price_real: 299,
-        plan_users_int: 10,
-        days_in_trial_int: 42,
-        feature_packs: ['MAPS', 'DEV', 'DATA'],
+      FullStory.event('Durian Added', {
+        plan_name_str: 'Sicko that wants durian'
       });
-      FullStory.log('Something worked!')
+      FullStory.log('Durian Put in a cart?! Must be a mistake')
       
     } else {
       this.snackbar.open(`Added ${product.title} to your cart`, '', { duration: 2000 });
